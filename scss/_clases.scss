@@ -1,0 +1,57 @@
+.bgColorBlack{
+    background-color: $colorBlack;
+}
+.colorBlack{
+    color: $colorBlack;
+}
+.bgColorWhite{
+    background-color: $colorWhite;
+}
+.colorWhite{
+    color: $colorWhite;
+}
+.bgColorGray{
+    background-color: $colorGray;
+}
+.colorGray{
+    color: $colorGray;
+}
+.bgColorGrayLight{
+    background-color: $colorGrayLight;
+}
+.colorGrayLigth{
+    color: $colorGrayLight;
+}
+.bgColorYellow{
+    background-color: $colorYellow;
+}
+.colorYellow{
+    color: $colorYellow;
+}
+.bgColorColorViolet{
+    background-color: $colorViolet;
+}
+.colorViolet{
+    color: $colorViolet;
+}
+
+.miCol-12{
+    width: ($ancho/12)*12;
+
+}
+.miCol-6{
+    width: ($ancho/12)*6;
+
+}
+.miCol-4{
+    width: ($ancho/12)*4;
+
+}
+.miCol-3{
+    width: ($ancho/12)*3;
+
+}
+.miCol-2{
+    width: ($ancho/12)*2;
+
+}

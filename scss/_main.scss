@@ -1,0 +1,121 @@
+/*¿Como hago para pisar mi altura de mi Carousel?
+¿Como piso el color de texto o mi bg color del dropdown?
+*/
+body{
+    background-color: $colorBody;
+    font-family: $family;
+}
+#header{
+    .navbar{
+        background-color: brown;
+        @media all and (min-width: 768px){
+            background-color: $colorBlack;
+        }
+        a{
+            color: $colorWhite; 
+            &:hover{
+                color: $colorYellow;
+            }
+        }    
+    }
+    .contentBanner{
+        display: flex;
+
+        margin-left:auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        
+        height: 400px;
+        width: 600px;
+
+        background-image: url(../media/banner.png);
+        background-repeat: no-repeat;
+        .banner{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            p{
+                text-align: center;
+                font-size: 1.5rem;
+            }
+
+
+        }
+    }
+}
+.body{
+    height: auto;
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+    .alto{
+        height: auto;
+        img{
+            height: 600px;
+        }
+    }
+
+
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    height: auto;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-content: space-around;
+        align-items: center;
+        .newsletterBoton{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            
+            button{
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+            }
+        }    
+    }    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+
+        li{
+            color: $colorWhite;
+            list-style: none; 
+            text-decoration: none;
+        }
+        a{   
+            color: $colorWhite;
+            text-decoration: none;
+            &:hover{
+                color: $colorYellow;
+              text-decoration: none; 
+            }  
+
+        }
+        .newsletterBoton{
+            display: flex;
+            flex-direction: column;
+        }
+    } 
+}      

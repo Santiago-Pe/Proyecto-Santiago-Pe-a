@@ -1,0 +1,17 @@
+@mixin fuentes($size, $weight){
+    font-size: $size;
+    font-weight: $weight;
+}
+
+.type-light{
+    @include fuentes (0.5rem, $font-light);
+}
+.type-regular{
+    @include fuentes(1rem, $font-regular )
+}
+.type-semi-bold{
+    @include fuentes(1.5rem, $font-semi-bold )
+}
+.type-bold{
+    @include fuentes(2rem, $font-bold )
+}
