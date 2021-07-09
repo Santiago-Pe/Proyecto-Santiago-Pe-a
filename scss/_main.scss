@@ -7,16 +7,17 @@ body{
 }
 #header{
     .navbar{
-        background-color: brown;
+        background-color: $colorWhite;
         @media all and (min-width: 768px){
-            background-color: $colorBlack;
+            background-color: $colorWhite;
         }
         a{
             color: $colorWhite; 
             &:hover{
                 color: $colorYellow;
             }
-        }    
+        }
+        
     }
     .contentBanner{
         display: flex;
