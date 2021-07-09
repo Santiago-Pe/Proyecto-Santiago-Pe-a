@@ -78,10 +78,19 @@ body {
   font-family: "Open Sans", sans-serif; }
 
 #header .navbar {
-  background-color: brown; }
-  @media all and (min-width: 768px) {
+  /*MOBILE FIRST*/ }
+  @media all and (max-width: 768px) {
     #header .navbar {
-      background-color: #000000; } }
+      background-color: #000000; }
+      #header .navbar .navbar-nav .nav-link {
+        padding-left: 1rem;
+        background-color: #333533; }
+      #header .navbar .navbar-nav a {
+        color: #fff; }
+        #header .navbar .navbar-nav a:hover {
+          color: #fca311; } }
+  #header .navbar .navbar-nav .nav-link {
+    padding-left: 1rem; }
   #header .navbar a {
     color: #fff; }
     #header .navbar a:hover {

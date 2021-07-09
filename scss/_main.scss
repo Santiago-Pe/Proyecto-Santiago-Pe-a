@@ -7,10 +7,27 @@ body{
 }
 #header{
     .navbar{
-        background-color: $colorWhite;
-        @media all and (min-width: 768px){
-            background-color: $colorWhite;
+        /*MOBILE FIRST*/
+        @media all and (max-width: 768px){
+            background-color: $colorBlack;
+            .navbar-nav{
+                .nav-link{
+                    padding-left: 1rem;
+                    background-color: $colorGray;
+                }
+                a{
+                    color: $colorWhite; 
+                    &:hover{
+                        color: $colorYellow;
+                    }
+                }    
+            }
         }
+        .navbar-nav{
+            .nav-link{
+                padding-left: 1rem;
+            }
+        }    
         a{
             color: $colorWhite; 
             &:hover{
