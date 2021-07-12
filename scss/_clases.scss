@@ -35,23 +35,9 @@
     color: $colorViolet;
 }
 
-.miCol-12{
-    width: ($ancho/12)*12;
-
-}
-.miCol-6{
-    width: ($ancho/12)*6;
-
-}
-.miCol-4{
-    width: ($ancho/12)*4;
-
-}
-.miCol-3{
-    width: ($ancho/12)*3;
-
-}
-.miCol-2{
-    width: ($ancho/12)*2;
-
+$ancho: 100%;
+@for $i from 1 through 13{
+    .miCol-#{$i}{
+        width: ($ancho/12)*$i;
+    }
 }
