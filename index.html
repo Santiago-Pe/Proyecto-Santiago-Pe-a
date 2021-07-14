@@ -4,21 +4,18 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- Mi estilo CSS/SASS -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <!-- LINK FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-
-    
     <title>B-PORT Inicio</title>
   </head>
   <body>
       <div id="header">
-         <!--MENU DESPLEGABLE BOOTSTRAP--> 
-         <nav class="navbar navbar-expand-lg navbar-light bgColorBlack p-20">
+        <!--MENU DESPLEGABLE BOOTSTRAP--> 
+        <nav class="navbar navbar-expand-lg navbar-light bgColorBlack p-20">
           <a class="navbar-brand" href="index.html">
               <img src="media/logo.png" alt="B-PORT" width="70px" height="70px">
           </a>
@@ -46,14 +43,16 @@
         <!--BANNER--> 
         <div class="contentBanner">
           <div class="banner"> 
-              <button class="type-semi-bold boton">
+              <button class="type-semi-bold button colorBlack">
+                Ver Productos
                 <a href="paginas/productos.html"> 
-                  Ver Productos
                 </a>
               </button>
           </div>  
         </div> 
-      </div>  
+      </div> 
+
+      <hr>
 
         <!--CAROUSEL DE PROXIMOS PRODUCTOS--> 
       <div class="body">
@@ -75,39 +74,38 @@
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only type-regular">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only type-regular">Siguiente</span>
             </a>
-          </div>    
+          </div>
+          
           <!--INFORMACION-->
           <div class="informacion miCol-12">
-            
-            <div class="cardInicio">         
+            <div class="cardInicioUno">         
               <div class="card" style="width: 18rem;">
                 <img src="media/cardDos.png" class="card-img-top" alt="B-PORT card">
                 <div class="card-body">
-                  <p class="card-text">Encontra las mejores ofertas en nuestra tienda. <span>Ropa old shcoll 90'.</span> <br> Temporada Invierno</p>
+                  <p class="card-text">Proximamente ingreso de <span>Zapatillas</span>.</p>
                 </div>
               </div>
             </div>
-
             <div class="informacionUno miCol-4">
                 <div class="textoUno">
                   <h3 class="type-bold">SOMOS B-PORT</h3>
                   <p class="type-regular">VISTIENDO AL PRESENTE DE PASADO</p>
-                  <p class="type-light">Nos basamos en un sistema de venta totalemente libre, en el cual nuestro <span>stock</span> es limitado y variado.</p>
-                  <p>Podras encontrar una determinada cantidad de prodcutos especialmente sleccionados para formar parte de la coleccion <span>B-PORT</span></p>
+                  <p class="type-light textInfo">Nos basamos en un sistema de venta totalemente libre, en el cual nuestro <span>stock</span> es limitado y variado.</p>
+                  <p>Podras encontrar una determinada cantidad de prodcutos especialmente sleccionados para formar parte de la coleccion <span>B-PORT</span>.</p>
                 </div>  
             </div>
-            <div class="cardInicio">         
+            <div class="cardInicioDos">         
               <div class="card" style="width: 18rem;">
-                <img src="media/card.png" class="card-img-top" alt="B-PORT card">
-                <div class="card-body">
-                  <p class="card-text">Encontra las mejores ofertas en nuestra tienda. <span>Ropa old shcoll 90'.</span> <br> Temporada Invierno</p>
-                </div>
+                <a href="paginas/productos.html">
+                  <img src="media/card.png" class="card-img-top" alt="B-PORT card">
+                  <div class="card-body">
+                    <p class="card-text">Encontra las mejores ofertas en nuestra tienda. <span>Ropa old shcool 90'.</span> <br> Temporada Invierno</p>
+                  </div>
+                </a>
               </div>
             </div>  
           </div>
@@ -122,7 +120,9 @@
             <form>
                 <input class="new" type="text" name="email" placeholder="ejemplo@gmail.com" >
             </form>
-            <button>
+          </div>
+          <div>  
+            <button class="button">
               Recibir
             </button>
           </div>  
@@ -140,7 +140,6 @@
           </div>      
         </div>
       </div>
-
 
        <!-- J QUERY(includes Popper) -->
     <script src="bootstrap/js/jquery-3.5.1.slim.min.js" ></script>

@@ -17,5 +17,19 @@
 }
 
 @mixin button {
-    
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 9px;
+    border: none;
+    background-color:  $colorYellow;
+    text-transform: uppercase;
+}
+.button{
+    @include button();
+    &:hover{
+        cursor:pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
 }
