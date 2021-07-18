@@ -303,3 +303,24 @@ footer {
         .content .galleryOne .products img:hover {
           width: 325px;
           height: 325px; }
+
+.menuCompra h3 {
+  text-align: center;
+  margin-top: 2rem; }
+
+.menuCompra .seccioneOne {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem; }
+  .menuCompra .seccioneOne .comprar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start; }
+    .menuCompra .seccioneOne .comprar .formCompra {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around; }
