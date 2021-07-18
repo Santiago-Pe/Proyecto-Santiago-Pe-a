@@ -19,6 +19,38 @@
   font-size: 2rem;
   font-weight: 800; }
 
+.button {
+  display: flex;
+  padding: auto;
+  margin: auto;
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 9px;
+  border: none;
+  background-color: #fca311;
+  text-transform: uppercase; }
+  .button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+
+.buttonBanner {
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 9px;
+  border: none;
+  background-color: #fca311;
+  text-transform: uppercase;
+  margin: 10px 300px 100px 400px;
+  height: 80px;
+  width: 160px; }
+  .buttonBanner:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+
 .bgColorBlack {
   background-color: #000000; }
 
@@ -55,20 +87,44 @@
 .colorViolet {
   color: #5a189a; }
 
-.miCol-12 {
-  width: 100%; }
+.miCol-1 {
+  width: 8.33333%; }
 
-.miCol-6 {
-  width: 50%; }
-
-.miCol-4 {
-  width: 33.33333%; }
+.miCol-2 {
+  width: 16.66667%; }
 
 .miCol-3 {
   width: 25%; }
 
-.miCol-2 {
-  width: 16.66667%; }
+.miCol-4 {
+  width: 33.33333%; }
+
+.miCol-5 {
+  width: 41.66667%; }
+
+.miCol-6 {
+  width: 50%; }
+
+.miCol-7 {
+  width: 58.33333%; }
+
+.miCol-8 {
+  width: 66.66667%; }
+
+.miCol-9 {
+  width: 75%; }
+
+.miCol-10 {
+  width: 83.33333%; }
+
+.miCol-11 {
+  width: 91.66667%; }
+
+.miCol-12 {
+  width: 100%; }
+
+.miCol-13 {
+  width: 108.33333%; }
 
 /*¿Como hago para pisar mi altura de mi Carousel?
 ¿Como piso el color de texto o mi bg color del dropdown?
@@ -76,12 +132,26 @@
 body {
   background-color: #d6d6d6;
   font-family: "Open Sans", sans-serif; }
+  body span {
+    font-weight: 800; }
+  body hr {
+    margin: 4rem auto 4rem auto;
+    border-top: 1.5px solid black; }
 
 #header .navbar {
-  background-color: brown; }
-  @media all and (min-width: 768px) {
+  /*MOBILE FIRST*/ }
+  @media all and (max-width: 768px) {
     #header .navbar {
-      background-color: #000000; } }
+      background-color: #000000; }
+      #header .navbar .navbar-nav .nav-link {
+        padding-left: 1rem;
+        background-color: #333533; }
+      #header .navbar .navbar-nav a {
+        color: #fff; }
+        #header .navbar .navbar-nav a:hover {
+          color: #fca311; } }
+  #header .navbar .navbar-nav .nav-link {
+    padding-left: 1rem; }
   #header .navbar a {
     color: #fff; }
     #header .navbar a:hover {
@@ -92,20 +162,17 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   height: 400px;
-  width: 600px;
-  background-image: url(../media/banner.png);
+  width: auto;
+  background-image: url(../media/bannerW.png);
   background-repeat: no-repeat; }
   #header .contentBanner .banner {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center; }
-    #header .contentBanner .banner p {
-      text-align: center;
-      font-size: 1.5rem; }
+    margin: 10px auto auto 160px; }
+    #header .contentBanner .banner a {
+      text-decoration: none;
+      color: #000000; }
 
 .body {
   height: auto; }
@@ -118,46 +185,77 @@ body {
     height: auto; }
     .body .alto img {
       height: 600px; }
+  .body .informacion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center; }
+    .body .informacion .cardInicioUno p {
+      text-align: start;
+      padding-top: 10%; }
+    .body .informacion .cardInicioDos a {
+      color: #000000;
+      text-decoration: none; }
+    .body .informacion .card-text {
+      height: 100px; }
+    .body .informacion .informacionUno {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: flex-end;
+      align-items: flex-end; }
+      .body .informacion .informacionUno .textInfo {
+        font-size: 1rem; }
 
-.footer {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: auto;
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  .footer .newsletter {
+  footer .newsletter {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center; }
-    .footer .newsletter .newsletterBoton {
+    footer .newsletter .newsletterBoton {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: stretch;
       flex-wrap: wrap; }
-      .footer .newsletter .newsletterBoton button {
+      footer .newsletter .newsletterBoton .new {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        border: none;
+        background-color: #DBDBDB; }
+      footer .newsletter .newsletterBoton button {
         margin-top: 0.5rem;
-        margin-bottom: 0.5rem; }
-  .footer .nav {
+        margin-bottom: 0.5rem;
+        width: 70%; }
+  footer .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center; }
-    .footer .nav li {
+    footer .nav li {
       color: #fff;
       list-style: none;
       text-decoration: none; }
-    .footer .nav a {
+    footer .nav a {
       color: #fff;
       text-decoration: none; }
-      .footer .nav a:hover {
+      footer .nav a:hover {
         color: #fca311;
         text-decoration: none; }
-    .footer .nav .newsletterBoton {
-      display: flex;
-      flex-direction: column; }
