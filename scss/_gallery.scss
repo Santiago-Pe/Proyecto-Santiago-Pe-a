@@ -1,0 +1,51 @@
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;     
+    justify-content: start;
+    h2{
+        font-size: 40px;
+        font-weight: $font-semi-bold;
+
+        text-align: center;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        background:  linear-gradient(to top,rgb(19, 156, 76) , $colorYellow,rgb(170, 26, 26));
+    }
+    .galleryOne{
+        margin-top:1rem ;
+        margin-bottom:1rem ; 
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .products{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: center;
+
+            margin-top:0.3rem ;
+            margin-bottom:0.3rem ;
+            img{
+                height: auto;
+                width: auto;
+                margin-top:0.3rem ;
+                margin-bottom:0.3rem ;
+                margin-left:0.3rem ;
+                margin-right:0.3rem ;
+
+                transition: width 10ms height 10ms;
+                box-shadow: 5px 5px 5px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+}
