@@ -25,11 +25,29 @@
     background-color:  $colorYellow;
     text-transform: uppercase;
 }
+
 .button{
+    display: flex;
+
+    padding: auto;
+    margin: auto;
     @include button();
     &:hover{
         cursor:pointer;
         transform: translateY(-3px);
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
     }
+}
+
+.buttonBanner{
+    @include button();
+    margin: 10px 300px 100px 400px;
+    height: 80px ;
+    width: 160px;
+    &:hover{
+        cursor:pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+    }
+
 }

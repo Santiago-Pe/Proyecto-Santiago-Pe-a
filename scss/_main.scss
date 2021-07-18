@@ -8,7 +8,7 @@ body{
         font-weight: $font-bold;
     }
     hr{
-        margin-bottom: 6rem;
+        margin: 4rem auto 4rem auto;
         border-top: 1.5px solid black; 
     }
 }
@@ -51,14 +51,14 @@ body{
         margin-top: 3rem;
         margin-bottom: 1rem;
         
-        height: 700px;
-        width: 700px;
+        height: 400px;
+        width: auto;
 
-        background-image: url(../media/banner.png);
+        background-image: url(../media/bannerW.png);
         background-repeat: no-repeat;
         .banner{
             display: flex;
-            margin: auto auto 375px auto;
+            margin: 10px auto auto 160px;
             a{
                 text-decoration: none;
                 color: $colorBlack;
@@ -120,7 +120,7 @@ body{
 
 
 }
-.footer{
+footer{
     display: flex;
     flex-direction: row;
     justify-content: center;

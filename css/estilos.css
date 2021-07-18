@@ -20,6 +20,9 @@
   font-weight: 800; }
 
 .button {
+  display: flex;
+  padding: auto;
+  margin: auto;
   width: auto;
   height: auto;
   border-radius: 4px;
@@ -28,6 +31,22 @@
   background-color: #fca311;
   text-transform: uppercase; }
   .button:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+
+.buttonBanner {
+  width: auto;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 9px;
+  border: none;
+  background-color: #fca311;
+  text-transform: uppercase;
+  margin: 10px 300px 100px 400px;
+  height: 80px;
+  width: 160px; }
+  .buttonBanner:hover {
     cursor: pointer;
     transform: translateY(-3px);
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
@@ -116,7 +135,7 @@ body {
   body span {
     font-weight: 800; }
   body hr {
-    margin-bottom: 6rem;
+    margin: 4rem auto 4rem auto;
     border-top: 1.5px solid black; }
 
 #header .navbar {
@@ -144,13 +163,13 @@ body {
   margin-right: auto;
   margin-top: 3rem;
   margin-bottom: 1rem;
-  height: 700px;
-  width: 700px;
-  background-image: url(../media/banner.png);
+  height: 400px;
+  width: auto;
+  background-image: url(../media/bannerW.png);
   background-repeat: no-repeat; }
   #header .contentBanner .banner {
     display: flex;
-    margin: auto auto 375px auto; }
+    margin: 10px auto auto 160px; }
     #header .contentBanner .banner a {
       text-decoration: none;
       color: #000000; }
@@ -194,49 +213,49 @@ body {
       .body .informacion .informacionUno .textInfo {
         font-size: 1rem; }
 
-.footer {
+footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: auto;
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  .footer .newsletter {
+  footer .newsletter {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
     align-content: space-around;
     align-items: center; }
-    .footer .newsletter .newsletterBoton {
+    footer .newsletter .newsletterBoton {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: stretch;
       flex-wrap: wrap; }
-      .footer .newsletter .newsletterBoton .new {
+      footer .newsletter .newsletterBoton .new {
         width: 100%;
         height: auto;
         border-radius: 4px;
         border: none;
         background-color: #DBDBDB; }
-      .footer .newsletter .newsletterBoton button {
+      footer .newsletter .newsletterBoton button {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
         width: 70%; }
-  .footer .nav {
+  footer .nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
     align-items: center; }
-    .footer .nav li {
+    footer .nav li {
       color: #fff;
       list-style: none;
       text-decoration: none; }
-    .footer .nav a {
+    footer .nav a {
       color: #fff;
       text-decoration: none; }
-      .footer .nav a:hover {
+      footer .nav a:hover {
         color: #fca311;
         text-decoration: none; }
