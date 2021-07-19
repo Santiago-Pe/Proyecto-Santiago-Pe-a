@@ -278,7 +278,7 @@ footer {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background: linear-gradient(to top, #139c4c, #fca311, #aa1a1a); }
+    background: linear-gradient(to top, #fca311, #e99700); }
   .content .galleryOne {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -306,6 +306,35 @@ footer {
         box-shadow: 1px 1px 1px #777777;
         border-radius: 10px; }
         .content .galleryOne .products img:hover {
+          width: 325px;
+          height: 325px; }
+  .content .galleryTwo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .content .galleryTwo .productsTwo {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem; }
+      .content .galleryTwo .productsTwo img {
+        height: auto;
+        width: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        transition: width 50ms height 50ms;
+        box-shadow: 1px 1px 1px #777777;
+        border-radius: 10px; }
+        .content .galleryTwo .productsTwo img:hover {
           width: 325px;
           height: 325px; }
 
