@@ -7,20 +7,70 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        margin: 1rem;
+        align-items: stretch;
 
+        height: auto;
+        width: 100%;
+
+        background-image: url(../media/bannerCompra.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
         margin: 2rem;
         .comprar{
+            background-color: #fff;
+            border-style: solid;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            justify-content: start;
+            justify-content: flex-start;
+            align-content: stretch;
+            align-items: stretch;
             .formCompra{
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: center;
+                align-content: flex-start;
+                width: auto;
+                height: auto;
+                margin-left: 1rem;
+
+                .textCompra{
+                    .text{
+                        text-align: center;
+                    }
+                    
+                }
+                .form{
+                    display: flex;
+                    width: auto;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    align-content: flex-start;
+                    input{
+                        width: 50px;
+                    }
+                }
             }
+            a{
+                margin-top: 10%;
+                padding-top: auto;
+                padding-bottom: auto;
+                .buttonCompra{
+                    @include button();
+                    margin: auto auto auto auto;
+                    height: 80px ;
+                    width: 160px; 
+                    display: flex;
+                    justify-content: space-around;
+                    align-content: stretch;
+                    align-items: center;
+                }
+            }    
         }
     }
 }    

@@ -44,7 +44,7 @@
 
 .buttonBanner{
     @include button();
-    margin: 10px 300px 100px 400px;
+    margin: auto auto auto 380px;
     height: 80px ;
     width: 160px;
     &:hover{

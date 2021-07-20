@@ -15,13 +15,91 @@
         background:  linear-gradient(to top, $colorYellow, rgb(233, 151, 0));
     }
     .galleryOne{
-        margin-top:1rem ;
-        margin-bottom:1rem ; 
-
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
         .products{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            img{
+                height: auto;
+                width: auto;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+
+
+                transition: width 50ms height 50ms;
+                box-shadow: 1px 1px 1px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+    .galleryTwo{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .productsTwo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            img{
+                height: auto;
+                width: auto;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+
+
+                transition: width 50ms height 50ms;
+                box-shadow: 1px 1px 1px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+    .galleryThree{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .productsThree{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -52,14 +130,15 @@
             }
         }
     }
-    .galleryTwo{
-        margin-top:1rem ;
-        margin-bottom:1rem ; 
-
+    .galleryFour{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        .productsTwo{
+        justify-content: space-around;
+        align-content: space-around;
+        .productsFour{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
