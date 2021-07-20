@@ -404,68 +404,81 @@ footer {
           width: 325px;
           height: 325px; }
 
-.menuCompra h3 {
-  text-align: center;
-  margin-top: 2rem; }
-
-.menuCompra .seccioneOne {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 1rem;
-  align-items: stretch;
-  height: auto;
-  width: 100%;
-  background-image: url(../media/bannerCompra.png);
+.bodyCompras {
+  background-image: url(../media/fondoCompra.png);
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 2rem; }
-  .menuCompra .seccioneOne .comprar {
-    background-color: #fff;
-    border-style: solid;
+  background-position: center; }
+  .bodyCompras .menuCompra h3 {
+    text-align: center;
+    margin-top: 2rem; }
+  .bodyCompras .menuCompra .seccioneOne {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: stretch; }
-    .menuCompra .seccioneOne .comprar .formCompra {
+    justify-content: center;
+    margin: 1rem;
+    align-items: stretch;
+    height: auto;
+    width: auto;
+    /*background-image: url(../media/bannerCompra.png);
+            background-repeat: no-repeat;
+            background-position: center;*/
+    margin: 2rem; }
+    .bodyCompras .menuCompra .seccioneOne .comprar {
+      border-top: 1.5px;
+      border-left: 1.5px;
+      border-bottom: 1.5px;
+      border-right: 1.5px;
+      border-color: black;
+      background-color: #cecdcd;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      justify-content: center;
-      align-content: flex-start;
-      width: auto;
-      height: auto;
-      margin-left: 1rem; }
-      .menuCompra .seccioneOne .comprar .formCompra .textCompra .text {
-        text-align: center; }
-      .menuCompra .seccioneOne .comprar .formCompra .form {
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: stretch; }
+      .bodyCompras .menuCompra .seccioneOne .comprar .formCompra {
         display: flex;
-        width: auto;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-around;
-        align-content: flex-start; }
-        .menuCompra .seccioneOne .comprar .formCompra .form input {
-          width: 50px; }
-    .menuCompra .seccioneOne .comprar a {
-      margin-top: 10%;
-      padding-top: auto;
-      padding-bottom: auto; }
-      .menuCompra .seccioneOne .comprar a .buttonCompra {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
         width: auto;
         height: auto;
-        border-radius: 4px;
-        margin-top: 9px;
-        border: none;
-        background-color: #fca311;
-        text-transform: uppercase;
-        margin: auto auto auto auto;
-        height: 80px;
-        width: 160px;
-        display: flex;
-        justify-content: space-around;
-        align-content: stretch;
-        align-items: center; }
+        margin-left: 1rem; }
+        .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .textCompra .text {
+          text-align: center; }
+        .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .form {
+          display: flex;
+          width: auto;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-around;
+          align-content: flex-start; }
+          .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .form input {
+            width: 50px; }
+      .bodyCompras .menuCompra .seccioneOne .comprar a {
+        margin-top: 10%;
+        padding-top: auto;
+        padding-bottom: auto; }
+        .bodyCompras .menuCompra .seccioneOne .comprar a .buttonCompra {
+          width: auto;
+          height: auto;
+          border-radius: 4px;
+          margin-top: 9px;
+          border: none;
+          background-color: #fca311;
+          text-transform: uppercase;
+          margin: auto auto auto auto;
+          height: 80px;
+          width: 160px;
+          display: flex;
+          justify-content: space-around;
+          align-content: stretch;
+          align-items: center; }
+    .bodyCompras .menuCompra .seccioneOne .cardCompra {
+      border-style: solid;
+      border-top: 1.5px;
+      border-right: 1.5px;
+      border-bottom: 1.5px;
+      border-left: 1.5px; }
