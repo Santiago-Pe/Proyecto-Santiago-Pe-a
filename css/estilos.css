@@ -425,18 +425,14 @@ footer {
             background-position: center;*/
     margin: 2rem; }
     .bodyCompras .menuCompra .seccioneOne .comprar {
-      border-top: 1.5px;
-      border-left: 1.5px;
-      border-bottom: 1.5px;
-      border-right: 1.5px;
-      border-color: black;
-      background-color: #cecdcd;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       justify-content: flex-start;
-      align-content: stretch;
-      align-items: stretch; }
+      align-content: space-around;
+      align-items: stretch;
+      background-color: #e5e5e5;
+      padding-top: 0.2rem; }
       .bodyCompras .menuCompra .seccioneOne .comprar .formCompra {
         display: flex;
         flex-direction: column;
@@ -446,8 +442,6 @@ footer {
         width: auto;
         height: auto;
         margin-left: 1rem; }
-        .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .textCompra .text {
-          text-align: center; }
         .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .form {
           display: flex;
           width: auto;
