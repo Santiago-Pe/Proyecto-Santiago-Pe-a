@@ -60,6 +60,8 @@
                     margin-top: 10%;
                     padding-top: auto;
                     padding-bottom: auto;
+
+                    text-decoration: none;
                     .buttonCompra{
                         @include button();
                         margin: auto auto auto auto;
@@ -69,16 +71,15 @@
                         justify-content: space-around;
                         align-content: stretch;
                         align-items: center;
+                        &:hover{
+                            cursor:pointer;
+                            transform: translateY(-3px);
+                            transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
+
+                        }
                     }
                 }    
             }
-            .cardCompra{    
-                border-style: solid;
-                border-top: 1.5px;
-                border-right: 1.5px;
-                border-bottom: 1.5px;
-                border-left: 1.5px;
-            }    
         }
     } 
 }       

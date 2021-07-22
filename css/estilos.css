@@ -271,7 +271,126 @@ footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: start; }
+  justify-content: start;
+  /*
+    .galleryTwo{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .productsTwo{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            img{
+                height: auto;
+                width: auto;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+
+
+                transition: width 50ms height 50ms;
+                box-shadow: 1px 1px 1px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+    .galleryThree{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .productsThree{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            img{
+                height: auto;
+                width: auto;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+
+
+                transition: width 50ms height 50ms;
+                box-shadow: 1px 1px 1px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+    .galleryFour{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .productsFour{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+
+            img{
+                height: auto;
+                width: auto;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: 0.5rem;
+                margin-right: 0.5rem;
+
+
+                transition: width 50ms height 50ms;
+                box-shadow: 1px 1px 1px rgb(119, 119, 119);
+                border-radius: 10px;
+                &:hover{
+                    width: 325px;
+                    height: 325px;
+                }
+            }
+        }
+    }
+*/ }
   .content h2 {
     font-size: 40px;
     font-weight: 600;
@@ -279,7 +398,7 @@ footer {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background: linear-gradient(to top, #fca311, #e99700); }
-  .content .galleryOne {
+  .content .gallery {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -287,7 +406,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around; }
-    .content .galleryOne .products {
+    .content .gallery .products {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -297,7 +416,12 @@ footer {
       margin-bottom: 0.5rem;
       margin-left: 0.5rem;
       margin-right: 0.5rem; }
-      .content .galleryOne .products img {
+      .content .gallery .products a {
+        text-decoration: none;
+        color: #000000;
+        text-align: center;
+        font-size: 400; }
+      .content .gallery .products img {
         height: auto;
         width: auto;
         margin-top: 0.5rem;
@@ -307,100 +431,7 @@ footer {
         transition: width 50ms height 50ms;
         box-shadow: 1px 1px 1px #777777;
         border-radius: 10px; }
-        .content .galleryOne .products img:hover {
-          width: 325px;
-          height: 325px; }
-  .content .galleryTwo {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around; }
-    .content .galleryTwo .productsTwo {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem; }
-      .content .galleryTwo .productsTwo img {
-        height: auto;
-        width: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        transition: width 50ms height 50ms;
-        box-shadow: 1px 1px 1px #777777;
-        border-radius: 10px; }
-        .content .galleryTwo .productsTwo img:hover {
-          width: 325px;
-          height: 325px; }
-  .content .galleryThree {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around; }
-    .content .galleryThree .productsThree {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: center;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem; }
-      .content .galleryThree .productsThree img {
-        height: auto;
-        width: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        transition: width 50ms height 50ms;
-        box-shadow: 1px 1px 1px #777777;
-        border-radius: 10px; }
-        .content .galleryThree .productsThree img:hover {
-          width: 325px;
-          height: 325px; }
-  .content .galleryFour {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around; }
-    .content .galleryFour .productsFour {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-content: center;
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
-      margin-left: 0.5rem;
-      margin-right: 0.5rem; }
-      .content .galleryFour .productsFour img {
-        height: auto;
-        width: auto;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        transition: width 50ms height 50ms;
-        box-shadow: 1px 1px 1px #777777;
-        border-radius: 10px; }
-        .content .galleryFour .productsFour img:hover {
+        .content .gallery .products img:hover {
           width: 325px;
           height: 325px; }
 
@@ -454,7 +485,8 @@ footer {
       .bodyCompras .menuCompra .seccioneOne .comprar a {
         margin-top: 10%;
         padding-top: auto;
-        padding-bottom: auto; }
+        padding-bottom: auto;
+        text-decoration: none; }
         .bodyCompras .menuCompra .seccioneOne .comprar a .buttonCompra {
           width: auto;
           height: auto;
@@ -470,9 +502,7 @@ footer {
           justify-content: space-around;
           align-content: stretch;
           align-items: center; }
-    .bodyCompras .menuCompra .seccioneOne .cardCompra {
-      border-style: solid;
-      border-top: 1.5px;
-      border-right: 1.5px;
-      border-bottom: 1.5px;
-      border-left: 1.5px; }
+          .bodyCompras .menuCompra .seccioneOne .comprar a .buttonCompra:hover {
+            cursor: pointer;
+            transform: translateY(-3px);
+            transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
