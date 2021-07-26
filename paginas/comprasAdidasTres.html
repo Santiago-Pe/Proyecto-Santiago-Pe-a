@@ -16,7 +16,7 @@
     
     <title>B-PORT Contacto</title>
   </head>
-  <body>
+  <body class="bodyCompras">
       <div id="header">
          <!--MENU DESPLEGABLE BOOTSTRAP--> 
           <nav class="navbar navbar-expand-lg navbar-light bgColorBlack p-20">
@@ -32,23 +32,20 @@
                  <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="paginas/productos.html">Productos</a>
+                 <a class="nav-link" href="../paginas/productos.html">Productos</a>
                </li>
                <li class="nav-item">
-                 <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="paginas/quienessomos.html">Quienes Somos</a>
+                 <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
                </li>
              </ul>
            </div>
          </nav>
        </div>
       <!--MENU DE COMPRAS GENERAL--> 
-      <div class="menuCompra">
-        <div class="titleCompra">
-          <h3>
-            Buzo Puma Vintage Gray
+      <div class="menuCompra mi">
+        <div class="titleCompra bgColorGrayLight">
+          <h3 class="type-bold">
+            Buzo Adidas Black Withe Three Stripes
           </h3>
         </div>
         <div class="seccioneOne">
@@ -56,44 +53,34 @@
             <div class="card" style="width: 18rem;">
               <img src="../media/adidasTres.png" class="card-img-top" alt="Buzo Puma Vintage Gray">
               <div class="card-body">
-                <h5 class="card-title">Buzo Puma Vintage Gray Talle XL</h5>
+                <h5 class="card-title">Buzo Adidas Black Withe Three Stripes  Talle L</h5>
                 <p class="card-text">Unico modelo disponible.</p>
                 <p class="card-text">Envios a todo el país.</p>
-                  <button class="button">
-                    Comprar
-                  </button>
               </div>
             </div>    
           </div>
-          <div class="comprar">
+          <div class="comprar miCol-3">
             <div class="textCompra">
-
-              <h2>Buzo Puma Vintage Gray T-XL</h2>
-              <p>$6000</p>
+              <h2 class="text type-semi-bold">Buzo Adidas</h2> 
+              <p class="text type-semi-bold">Black Withe Three Stripes T-L</p>
+              <p class="text type-semi-bold">$6.000,00</p>
+              <p class="text type-regular">18 CUOTAS DE $433.34</p>
+              <p class="text type-semi-bold">DISPONIBLE TALLE L</p>
             </div>
-            <div>  
-              <form action="formCompra" class="formCompra">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <select name="" id="">
-
-                </select>       
-                <button class="button">
+            <div class="formCompra">  
+              <form class="form">
+                <label for="text">Cantidad</label>
+                <input type="text" name="cantidad" >    
+                <button class="button" type="submit">
                   Comprar
                 </button>         
               </form>
-            </div>  
+            </div> 
+            <a href="../paginas/productos.html">
+            <button class="buttonCompra" type="button">
+              MAS PRODUCTOS
+            </button>
+            </a> 
           </div>
         </div>
       </div> 
@@ -108,7 +95,7 @@
             </form>
           </div>
           <div>  
-            <button class="button">
+            <button class="button" type="submit">
               Recibir
             </button>
           </div>  
@@ -119,9 +106,9 @@
           </div>
           <div>  
             <ul>
-                <li><a class="type-regular" href="index.html">Inicio</a></li>
-                <li><a class="type-regular" href="paginas/productos.html">Productos</a></li>
-                <li><a class="type-regular" href="paginas/contacto.html">Contacto</a></li>
+                <li><a class="type-regular" href="../index.html">Inicio</a></li>
+                <li><a class="type-regular" href="../paginas/productos.html">Productos</a></li>
+                <li><a class="type-regular" href="../paginas/contacto.html">Contacto</a></li>
             </ul>
           </div>      
         </div>

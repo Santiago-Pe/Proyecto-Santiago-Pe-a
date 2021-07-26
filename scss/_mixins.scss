@@ -3,19 +3,6 @@
     font-weight: $weight;
 }
 
-.type-light{
-    @include fuentes (0.5rem, $font-light);
-}
-.type-regular{
-    @include fuentes(1rem, $font-regular )
-}
-.type-semi-bold{
-    @include fuentes(1.5rem, $font-semi-bold )
-}
-.type-bold{
-    @include fuentes(2rem, $font-bold )
-}
-
 @mixin button {
     width: auto;
     height: auto;
@@ -24,36 +11,10 @@
     border: none;
     background-color:  $colorYellow;
     text-transform: uppercase;
-}
-
-.button{
-    display: flex;
-
-    padding: auto;
-    margin: auto;
-    @include button();
     &:hover{
         cursor:pointer;
         transform: translateY(-3px);
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
     }
-    a{
-        text-decoration: none;
-    }
 }
 
-.buttonBanner{
-    @include button();
-    margin: auto auto auto 380px;
-    height: 80px ;
-    width: 160px;
-    &:hover{
-        cursor:pointer;
-        transform: translateY(-3px);
-        transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-    }
-    a{
-        text-decoration: none;
-    }
-
-}

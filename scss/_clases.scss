@@ -1,3 +1,4 @@
+//COLORES
 .bgColorBlack{
     background-color: $colorBlack;
 }
@@ -35,9 +36,58 @@
     color: $colorViolet;
 }
 
+//COLUMNAS
 $ancho: 100%;
 @for $i from 1 through 13{
     .miCol-#{$i}{
         width: ($ancho/12)*$i;
     }
+}
+
+//TIPOGRAFIA
+.type-light{
+    @include fuentes (0.5rem, $font-light);
+}
+.type-regular{
+    @include fuentes(1rem, $font-regular )
+}
+.type-semi-bold{
+    @include fuentes(1.5rem, $font-semi-bold )
+}
+.type-bold{
+    @include fuentes(2rem, $font-bold )
+}
+
+//BOTONES
+
+.button{
+    display: flex;
+
+    padding: auto;
+    margin: auto;
+    @include button();
+    a{
+        text-decoration: none;
+    }
+}
+
+.buttonBanner{
+    @include button();
+    margin: auto auto auto 380px;
+    height: 80px ;
+    width: 160px;
+    a{
+        text-decoration: none;
+    }
+
+}
+
+.buttonForm{
+    @include button();
+    background:  linear-gradient(to left,$colorBlack, $colorGray);
+    color: $colorWhite;
+    a{
+        text-decoration: none;
+    }
+
 }
