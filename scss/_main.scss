@@ -6,7 +6,7 @@ body{
     }
     hr{
         margin: 4rem auto 4rem auto;
-        border-top: 1.5px solid black; 
+        border-top: 1.5px solid black;
     }
 }
 #header{
@@ -40,31 +40,35 @@ body{
         }
         
     }
-    .contentBanner{
-        display: inline-block;
+    
+}
+.contentBanner{
 
-        margin-left:0px;
-        margin-right: 0px;
-        margin-top: 3rem;
-        margin-bottom: 1rem;
+    background-image: url(../media/Banner4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
+
+    height: 500px;
+    width: 100%;
+    .banner{
+        padding-top: 2rem;
+
+        color: $colorWhite;
+        font-size: 30px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-end;
+        align-items: center;
         
-        height:500px;
+        height: 100%;
         width: 100%;
 
-        background-image: url(../media/bannerW.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        .banner{
-            display: flex;
-            margin: 40px auto auto 270px;
-            height: auto;
-            width: auto;
-            a{
-                text-decoration: none;
-                color: $colorBlack;
-            }
-        }
     }
+
 }
 .body{
     height: auto;

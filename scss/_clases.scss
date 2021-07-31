@@ -59,29 +59,13 @@ $ancho: 100%;
 }
 
 //BOTONES
-
 .button{
-    display: flex;
-
-    padding: auto;
-    margin: auto;
+    margin-top: 2rem;
     @include button();
     a{
         text-decoration: none;
     }
 }
-
-.buttonBanner{
-    @include button();
-    margin: auto auto auto 380px;
-    height: 80px ;
-    width: 160px;
-    a{
-        text-decoration: none;
-    }
-
-}
-
 .buttonForm{
     @include button();
     background:  linear-gradient(to left,$colorBlack, $colorGray);
@@ -89,5 +73,11 @@ $ancho: 100%;
     a{
         text-decoration: none;
     }
-
+}
+.buttonNew{
+    @include button();
+    margin-top: 1rem;
+    a{
+        text-decoration: none;
+    }
 }
