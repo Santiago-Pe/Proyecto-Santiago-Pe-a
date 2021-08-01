@@ -1,40 +1,74 @@
-body{
+body
+{
     background-color: $colorBody;
     font-family: $family;
-    span{
+    span
+    {
         font-weight: $font-bold;
     }
-    hr{
+    hr
+    {
         margin: 4rem auto 4rem auto;
         border-top: 1.5px solid black;
     }
 }
-#header{
-    .navbar{
-        /*MOBILE FIRST*/
-        @media all and (max-width: 768px){
+#header
+{
+    .navbar
+    {
+        //MOBILE
+        @media all and (max-width: 480px)
+        {
             background-color: $colorBlack;
-            .navbar-nav{
-                .nav-link{
+            .navbar-nav
+            {
+                .nav-link
+                {
                     padding-left: 1rem;
                     background-color: $colorGray;
                 }
-                a{
+                a
+                {
                     color: $colorWhite; 
-                    &:hover{
+                    &:hover
+                    {
                         color: $colorYellow;
                     }
                 }    
             }
         }
-        .navbar-nav{
-            .nav-link{
+        //TABLET
+        @media all and (max-width: 1024px)
+        {
+            background-color: $colorBlack;
+            .navbar-nav
+            {
+                .nav-link
+                {
+                    padding-left: 1rem;
+                }
+                a
+                {
+                    color: $colorWhite; 
+                    &:hover
+                    {
+                        color: $colorYellow;
+                    }
+                }    
+            }
+        }
+        .navbar-nav
+        {
+            .nav-link
+            {
                 padding-left: 1rem;
             }
         }    
-        a{
+        a
+        {
             color: $colorWhite; 
-            &:hover{
+            &:hover
+            {
                 color: $colorYellow;
             }
         }
@@ -42,9 +76,35 @@ body{
     }
     
 }
-.contentBanner{
+.contentBanner
+{
+    //MOBILE
+    @media all and (max-width: 480px)
+    {
+        background-image: url(../media/banner3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-self: center;
+        align-self: center;
 
-    background-image: url(../media/Banner4.png);
+        height: auto;
+        width: 100%;
+    }
+     //TABLET
+     @media all and (max-width: 1024px)
+     {
+        background-image: url(../media/banner2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-self: center;
+        align-self: center;
+
+        height: 500px;
+        width: 100%;
+     }
+
+
+    background-image: url(../media/banner1.png);
     background-position: center;
     background-repeat: no-repeat;
     justify-self: center;
@@ -52,8 +112,10 @@ body{
 
     height: 500px;
     width: 100%;
-    .banner{
-        padding-top: 2rem;
+    .banner
+    {
+        padding-top: 10%;
+        padding-bottom: auto;
 
         color: $colorWhite;
         font-size: 30px;
@@ -66,25 +128,34 @@ body{
         
         height: 100%;
         width: 100%;
-
+        p
+        {
+            font-size: 30px;
+            text-align: center;
+        }
     }
 
 }
-.body{
+.body
+{
     height: auto;
-    h2{
+    h2
+    {
         text-align: center;
         font-size: 2rem;
         margin-bottom: 2rem;
         margin-bottom: 3rem;
     }
-    .alto{
+    .alto
+    {
         height: auto;
-        img{
+        img
+        {
             height: 600px;
         }
     }
-    .informacion{
+    .informacion
+    {
         margin-top: 2rem;
         margin-bottom: 2rem;
 
@@ -94,29 +165,36 @@ body{
         align-content: flex-end;
         justify-content: space-around;
         align-items: center;
-        .cardInicioUno{
-                p{
-                    text-align: start;
-                    padding-top: 10%;
-                }  
+        .cardInicioUno
+        {
+            p
+            {
+                text-align: start;
+                padding-top: 10%;
+            }  
         }
-        .cardInicioDos{
-            a{
+        .cardInicioDos
+        {
+            a
+            {
             color: $colorBlack;
             text-decoration: none;
             }
         }
-        .card-text{
+        .card-text
+        {
             height: 100px;  
         }
-        .informacionUno{
+        .informacionUno
+        {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: flex-start;
             align-content: flex-end;
             align-items: flex-end;
-            .textInfo{
+            .textInfo
+            {
                 font-size: 1rem;
             }
         }
@@ -124,7 +202,8 @@ body{
 
 
 }
-footer{
+footer
+{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,49 +212,57 @@ footer{
 
     padding-top: 1rem;
     padding-bottom: 1rem;
-    .newsletter{
+    .newsletter
+    {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: nowrap;
         align-content: space-around;
         align-items: center;
-        .newsletterBoton{
+        .newsletterBoton
+        {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: stretch;
             flex-wrap: wrap;
-            .new{
+            .new
+            {
                 width: 100%;
                 height: auto;
                 border-radius: 4px;
                 border: none;
                 background-color: #DBDBDB;
             }
-            button{
+            button
+            {
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
                 width: 70%;
             }
         }    
     }    
-    .nav{
+    .nav
+    {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
         align-items: center;
 
-        li{
+        li
+        {
             color: $colorWhite;
             list-style: none; 
             text-decoration: none;
         }
-        a{   
+        a
+        {   
             color: $colorWhite;
             text-decoration: none;
-            &:hover{
+            &:hover
+            {
                 color: $colorYellow;
                 text-decoration: none; 
             }  
