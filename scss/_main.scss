@@ -137,7 +137,7 @@ body
 
 }
 .body
-{
+{   
     height: auto;
     h2
     {
@@ -146,27 +146,45 @@ body
         margin-bottom: 2rem;
         margin-bottom: 3rem;
     }
-    .alto
+    .carousel
     {
         height: auto;
         img
         {
-            height: 600px;
+            height: auto;
         }
     }
     .informacion
     {
-        margin-top: 2rem;
+        //MOBILE
+        @media all and (max-width: 480px)
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center; 
+            height: auto;
+            width: auto;  
+            .informacionUno
+            {
+                margin-top: 1rem;
+            }
+        }
+        margin-top: 5rem;
         margin-bottom: 2rem;
 
-        display: flex;    margin-top: 2rem;
-        margin-bottom: 2rem;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         align-content: flex-end;
         justify-content: space-around;
         align-items: center;
         .cardInicioUno
         {
+            height: auto;
+            width: auto;
             p
             {
                 text-align: start;
@@ -175,6 +193,8 @@ body
         }
         .cardInicioDos
         {
+            height: auto;
+            width: auto;
             a
             {
             color: $colorBlack;
@@ -184,6 +204,7 @@ body
         .card-text
         {
             height: 100px;  
+            width: auto;
         }
         .informacionUno
         {
@@ -205,6 +226,7 @@ body
 footer
 {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
 
@@ -215,6 +237,7 @@ footer
     .newsletter
     {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: nowrap;
@@ -223,6 +246,7 @@ footer
         .newsletterBoton
         {
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: stretch;
