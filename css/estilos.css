@@ -163,17 +163,6 @@ body {
     margin: 4rem auto 4rem auto;
     border-top: 1.5px solid black; }
 
-@media all and (max-width: 480px) {
-  #header .navbar {
-    background-color: #000000; }
-    #header .navbar .navbar-nav .nav-link {
-      padding-left: 1rem;
-      background-color: #333533; }
-    #header .navbar .navbar-nav a {
-      color: #fff; }
-      #header .navbar .navbar-nav a:hover {
-        color: #fca311; } }
-
 @media all and (max-width: 1024px) {
   #header .navbar {
     background-color: #000000; }

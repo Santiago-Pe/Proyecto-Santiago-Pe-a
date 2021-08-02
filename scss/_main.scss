@@ -16,27 +16,6 @@ body
 {
     .navbar
     {
-        //MOBILE
-        @media all and (max-width: 480px)
-        {
-            background-color: $colorBlack;
-            .navbar-nav
-            {
-                .nav-link
-                {
-                    padding-left: 1rem;
-                    background-color: $colorGray;
-                }
-                a
-                {
-                    color: $colorWhite; 
-                    &:hover
-                    {
-                        color: $colorYellow;
-                    }
-                }    
-            }
-        }
         //TABLET
         @media all and (max-width: 1024px)
         {
