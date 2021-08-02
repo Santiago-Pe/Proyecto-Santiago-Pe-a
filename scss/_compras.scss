@@ -1,83 +1,88 @@
-.bodyCompras{
+.bodyCompras
+{
     background-image: url(../media/fondoCompra.png);
     background-repeat: no-repeat;
     background-position: center;
+    //MOBILE
+    @media all and (max-width: 480px)
+    {
+        background-image: none;
+        background-color: $colorWhite;
+    }
+    //TABLET
+    @media all and (max-width: 1024px)
+    {
+        background-image: none;
+        background-color: $colorWhite;
+    }
 
-    .menuCompra{
-        h3{
+    .menuCompra
+    {
+        h3
+        {
             text-align: center;
             margin-top: 2rem;
         }
-        .seccioneOne{
+        .seccioneOne
+        {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            margin: 1rem;
+            align-content: space-around;
             align-items: stretch;
-
-            height: auto;
-            width: auto;
-                        
-            margin: 2rem;
-            .comprar{
+            margin: 1rem;
+            @media all and (max-width: 480px)
+            {
+                .comprar
+                {
+                    margin-top: 1em;
+                    margin-bottom: 1rem;
+                }
+            }
+            .comprar
+            {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
-                justify-content: flex-start;
-                align-content: space-around;
-                align-items: stretch;
-
+                align-items: center;
+                justify-content: center;
                 background-color: $colorGrayLight;
-                padding-top: 0.2rem;
-                .formCompra{
+
+                padding: 1rem;
+                margin-left: 1rem;
+
+                width: auto;
+                .formCompra
+                {
                     display: flex;
-                    flex-direction: column;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-content: flex-start;
-                    width: auto;
-                    height: auto;
-                    margin-left: 1rem;
-                    
-                    .form{
+                    form
+                    {
                         display: flex;
-                        width: auto;
                         flex-direction: column;
-                        align-items: flex-start;
-                        justify-content: space-around;
-                        align-content: flex-start;
-                        input{
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        input
+                        {
                             width: 50px;
                         }
-                    }
-                }
-                a{
-                    margin-top: 10%;
-                    padding-top: auto;
-                    padding-bottom: auto;
-
-                    text-decoration: none;
-                    /*
-                    .buttonCompra{
-                        @include button();
-                        margin: auto auto auto auto;
-                        height: 80px ;
-                        width: 160px; 
-                        display: flex;
-                        justify-content: space-around;
-                        align-content: stretch;
-                        align-items: center;
-                        &:hover{
-                            cursor:pointer;
-                            transform: translateY(-3px);
-                            transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-
+                        a{
+                            text-decoration: none;
+                            color: $colorBlack;
                         }
                     }
-                    */
-                }    
+                } 
+                .textCompra
+                {
+                    text-align: center;
+                } 
             }
+            .cardCompra
+            {
+                margin-right: 1rem;
+            }
+            
         }
     } 
 }       
