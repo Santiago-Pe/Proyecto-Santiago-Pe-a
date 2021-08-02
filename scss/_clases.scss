@@ -1,83 +1,116 @@
 //COLORES
-.bgColorBlack{
+.bgColorBlack
+{
     background-color: $colorBlack;
 }
-.colorBlack{
+.colorBlack
+{
     color: $colorBlack;
 }
-.bgColorWhite{
+.bgColorWhite
+{
     background-color: $colorWhite;
 }
-.colorWhite{
+.colorWhite
+{
     color: $colorWhite;
 }
-.bgColorGray{
+.bgColorGray
+{
     background-color: $colorGray;
 }
-.colorGray{
+.colorGray
+{
     color: $colorGray;
 }
-.bgColorGrayLight{
+.bgColorGrayLight
+{
     background-color: $colorGrayLight;
 }
-.colorGrayLigth{
+.colorGrayLigth
+{
     color: $colorGrayLight;
 }
-.bgColorYellow{
+.bgColorYellow
+{
     background-color: $colorYellow;
 }
-.colorYellow{
+.colorYellow
+{
     color: $colorYellow;
 }
-.bgColorColorViolet{
+.bgColorColorViolet
+{
     background-color: $colorViolet;
 }
-.colorViolet{
+.colorViolet
+{
     color: $colorViolet;
 }
 
 //COLUMNAS
 $ancho: 100%;
-@for $i from 1 through 13{
-    .miCol-#{$i}{
+@for $i from 1 through 13
+{
+    .miCol-#{$i}
+    {
         width: ($ancho/12)*$i;
     }
 }
 
 //TIPOGRAFIA
-.type-light{
+.type-light
+{
     @include fuentes (0.5rem, $font-light);
 }
-.type-regular{
+.type-regular
+{
     @include fuentes(1rem, $font-regular )
 }
-.type-semi-bold{
+.type-semi-bold
+{
     @include fuentes(1.5rem, $font-semi-bold )
 }
-.type-bold{
+.type-bold
+{
     @include fuentes(2rem, $font-bold )
 }
 
 //BOTONES
-.button{
+.button
+{
     margin-top: 2rem;
     @include button();
-    a{
+    a
+    {
         text-decoration: none;
     }
 }
-.buttonForm{
+.buttonForm
+{
     @include button();
     background:  linear-gradient(to left,$colorBlack, $colorGray);
     color: $colorWhite;
-    a{
+    a
+    {
         text-decoration: none;
     }
 }
-.buttonNew{
+.buttonNew
+{
     @include button();
     margin-top: 1rem;
-    a{
+    a
+    {
+        text-decoration: none;
+    }
+}
+.buttonFC
+{
+    margin-top: 1rem;
+    @include button();
+    a
+    {
         text-decoration: none;
     }
 }

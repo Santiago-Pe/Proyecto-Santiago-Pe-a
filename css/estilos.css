@@ -139,6 +139,21 @@
   .buttonNew a {
     text-decoration: none; }
 
+.buttonFC {
+  margin-top: 1rem;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: #fca311;
+  border-radius: 4%;
+  text-transform: uppercase; }
+  .buttonFC:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+  .buttonFC a {
+    text-decoration: none; }
+
 body {
   background-color: #d6d6d6;
   font-family: "Open Sans", sans-serif; }
@@ -379,6 +394,14 @@ footer {
   background-image: url(../media/fondoCompra.png);
   background-repeat: no-repeat;
   background-position: center; }
+  @media all and (max-width: 480px) {
+    .bodyCompras {
+      background-image: none;
+      background-color: #fff; } }
+  @media all and (max-width: 1024px) {
+    .bodyCompras {
+      background-image: none;
+      background-color: #fff; } }
   .bodyCompras .menuCompra h3 {
     text-align: center;
     margin-top: 2rem; }
@@ -387,61 +410,40 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 1rem;
+    align-content: space-around;
     align-items: stretch;
-    height: auto;
-    width: auto;
-    margin: 2rem; }
+    margin: 1rem; }
+    @media all and (max-width: 480px) {
+      .bodyCompras .menuCompra .seccioneOne .comprar {
+        margin-top: 1em;
+        margin-bottom: 1rem; } }
     .bodyCompras .menuCompra .seccioneOne .comprar {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      justify-content: flex-start;
-      align-content: space-around;
-      align-items: stretch;
+      align-items: center;
+      justify-content: center;
       background-color: #e5e5e5;
-      padding-top: 0.2rem; }
+      padding: 1rem;
+      margin-left: 1rem;
+      width: auto; }
       .bodyCompras .menuCompra .seccioneOne .comprar .formCompra {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: flex-start;
-        width: auto;
-        height: auto;
-        margin-left: 1rem; }
-        .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .form {
+        display: flex; }
+        .bodyCompras .menuCompra .seccioneOne .comprar .formCompra form {
           display: flex;
-          width: auto;
           flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-around;
-          align-content: flex-start; }
-          .bodyCompras .menuCompra .seccioneOne .comprar .formCompra .form input {
+          align-items: center;
+          justify-content: center;
+          align-content: center; }
+          .bodyCompras .menuCompra .seccioneOne .comprar .formCompra form input {
             width: 50px; }
-      .bodyCompras .menuCompra .seccioneOne .comprar a {
-        margin-top: 10%;
-        padding-top: auto;
-        padding-bottom: auto;
-        text-decoration: none;
-        /*
-                    .buttonCompra{
-                        @include button();
-                        margin: auto auto auto auto;
-                        height: 80px ;
-                        width: 160px; 
-                        display: flex;
-                        justify-content: space-around;
-                        align-content: stretch;
-                        align-items: center;
-                        &:hover{
-                            cursor:pointer;
-                            transform: translateY(-3px);
-                            transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;
-
-                        }
-                    }
-                    */ }
+          .bodyCompras .menuCompra .seccioneOne .comprar .formCompra form a {
+            text-decoration: none;
+            color: #000000; }
+      .bodyCompras .menuCompra .seccioneOne .comprar .textCompra {
+        text-align: center; }
+    .bodyCompras .menuCompra .seccioneOne .cardCompra {
+      margin-right: 1rem; }
 
 .contQS {
   display: flex;
@@ -497,3 +499,6 @@ footer {
         height: 250px;
         width: 400px;
         border-radius: 8px; }
+
+.formulario {
+  margin: 2rem; }
