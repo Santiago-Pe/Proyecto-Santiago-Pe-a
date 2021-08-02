@@ -251,6 +251,13 @@ footer
             justify-content: center;
             align-items: stretch;
             flex-wrap: wrap;
+            form
+            {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-items: center;
+            }
             .new
             {
                 width: 100%;

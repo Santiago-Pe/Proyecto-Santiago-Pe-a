@@ -314,6 +314,11 @@ footer {
       justify-content: center;
       align-items: stretch;
       flex-wrap: wrap; }
+      footer .newsletter .newsletterBoton form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; }
       footer .newsletter .newsletterBoton .new {
         width: 100%;
         height: auto;
@@ -453,9 +458,6 @@ footer {
   align-content: space-around;
   margin-top: 2rem;
   margin-bottom: 2rem; }
-  .contQS .hrStyle {
-    margin: 4rem auto 4rem auto;
-    border-top: 1.5px solid black; }
   .contQS .contText {
     text-align: center; }
   .contQS .contInfo {

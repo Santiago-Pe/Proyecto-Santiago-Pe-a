@@ -1,17 +1,20 @@
-@mixin fuentes($size, $weight){
+@mixin fuentes($size, $weight)
+{
     font-size: $size;
     font-weight: $weight;
 }
 
 
-@mixin button {
+@mixin button 
+{
     width: auto;
     height: auto;
     border: none;
     background-color:  $colorYellow;
     border-radius: 4%;
     text-transform: uppercase;
-    &:hover{
+    &:hover
+    {
         cursor:pointer;
         transform: translateY(-3px);
         transition: all cubic-bezier(0.215, 0.610, 0.355, 1) .5s;

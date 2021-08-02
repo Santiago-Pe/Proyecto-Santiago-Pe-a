@@ -117,15 +117,13 @@
             <h4 class="type-semi-bold">Newsletter</h4>
             <p class="type-regular">Enterate de todas nuestras novedades.</p>
           <div class="newsletterBoton">  
-            <form>
-                <input class="new" type="text" name="email" placeholder="ejemplo@gmail.com" >
+            <form class="needs-validation" method="POST" action="email.php" novalidate>
+                <input class="new" type="text" name="email" placeholder="ejemplo@gmail.com" required>
+                <button class="button">
+                  Recibir
+                </button>
             </form>
-          </div>
-          <div>  
-            <button class="buttonNew">
-              Recibir
-            </button>
-          </div>  
+          </div> 
         </div>
         <div class="nav miCol-6">
           <div class="subMenuTitle">
