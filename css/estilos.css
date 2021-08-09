@@ -245,7 +245,7 @@ body {
     align-content: flex-end;
     justify-content: space-around;
     align-items: center; }
-    @media all and (max-width: 480px) {
+    @media all and (max-width: 864px) {
       .body .informacion {
         display: flex;
         flex-direction: column;
@@ -487,6 +487,9 @@ footer {
           margin-top: 10px; }
     .contQS .contInfo .contMaps {
       text-align: center; }
+      @media all and (max-width: 631px) {
+        .contQS .contInfo .contMaps {
+          margin-top: 2rem; } }
       .contQS .contInfo .contMaps iframe {
         box-shadow: 1px 1px 1px #777777;
         height: 250px;

@@ -21,7 +21,6 @@
         align-content: space-around;
         justify-content: space-evenly;
         align-items: center;
-
         .contForm
         {
             padding-top: 15px;
@@ -32,7 +31,6 @@
             text-align: center;
 
             box-shadow: 1px 1px 1px rgb(119, 119, 119);
-
             form
             {
                 display: flex;
@@ -66,10 +64,12 @@
         .contMaps
         {
             text-align: center;
-            @media all and (max-width: 480px)
+             //MOBILE
+            @media all and (max-width: 631px)
             {
-             margin-top: 1rem;   
+                margin-top: 2rem;
             }
+
             iframe
             {
                 box-shadow: 1px 1px 1px rgb(119, 119, 119);
