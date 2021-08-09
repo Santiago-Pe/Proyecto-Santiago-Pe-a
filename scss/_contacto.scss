@@ -66,6 +66,10 @@
         .contMaps
         {
             text-align: center;
+            @media all and (max-width: 480px)
+            {
+             margin-top: 1rem;   
+            }
             iframe
             {
                 box-shadow: 1px 1px 1px rgb(119, 119, 119);
